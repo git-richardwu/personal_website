@@ -1,0 +1,293 @@
+.app {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) minmax(0, 65ch) minmax(80px, 1fr);
+  align-items: start;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  height: 100%;
+  margin: 40px
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 80px;
+}
+
+.page-content {
+  max-width: 700px;
+  min-width: 0;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px
+}
+
+.denou-gap {
+  margin-top: 130px;
+}
+
+.objective {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  max-width: 400px;
+  margin: 80px auto;
+  color: var(--black)
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 3px solid var(--parchment);
+}
+
+.card img {
+  width: 230px;
+  height: 180px;
+  object-fit: contain;
+  background-color: var(--parchment);
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--parchment);
+  gap: 4px;
+  font-family: "Lexend", sans-serif;
+}
+
+.card-list {
+  list-style: none;
+  text-align: center;
+}
+
+.card-label {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+  text-align: center;
+}
+
+.card-description {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
+.sprite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 200px;
+}
+
+.sprite img {
+  width: 230px;
+  object-fit: contain;
+}
+
+.sprite-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--parchment);
+  gap: 4px;
+  font-family: "Lexend", sans-serif;
+}
+
+.sprite-list {
+  list-style: none;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  text-align: center;
+}
+
+.sprite-label {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Noto Serif JP", serif;
+  text-align: center;
+}
+
+.sprite-description {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.4;
+  opacity: 0.7;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#report {
+  padding-top: 40px;
+}
+
+#protein {
+  padding-top: 600px;
+}
+
+.accusation {
+  font-size: 24px;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  color: var(--parchment);
+  line-height: 1.5;
+}
+
+.dropdown {
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  color: var(--parchment);
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid var(--parchment);
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 4px;
+}
+
+.sprite img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.sprite img:hover {
+  transform: rotate(2deg);
+}
+
+.sprite:hover .sprite-description,
+.sprite:hover .sprite-list {
+  opacity: 1;
+}
+
+.title {
+  font-size: 36px;
+  font-family: "Noto Serif JP", serif;
+  letter-spacing: 0.06em;
+  color: var(--parchment);
+  text-align: center;
+}
+
+.information {
+  font-family: "Lexend", sans-serif;
+  color: var(--parchment);
+  line-height: 1.5;
+}
+
+.date {
+  font-style: italic;
+}
+
+.landing-bgc {
+  background-color: var(--parchment);
+}
+
+.about-bgc {
+  background-color: var(--green);
+}
+
+.exp-bgc {
+  background-color: var(--blue);
+}
+
+.skills-bgc {
+  background-color: var(--yellow);
+}
+
+.projects-bgc {
+  background-color: var(--red);
+}
+
+.denou-bgc {
+  background-color: var(--black);
+}
+
+.project {
+  margin-bottom: 10px;
+}
+
+.links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-style {
+  color: var(--parchment);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.bullets {
+  margin: auto 20px;
+  font-family: "Lexend", sans-serif;
+  line-height: 1.2;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.accuseBtn {
+  font-size: 24px;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 600;
+  background-color: var(--parchment);
+  padding: 8px 10px;
+}
+
+@media (max-width: 1000px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .grid, 
+  .page-content {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .side {
+    display: none;
+  }
+
+  .mystery-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1750px) {
+  .page-layout.collapse {
+    grid-template-columns: 1fr;
+  }
+}

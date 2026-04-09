@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --base-font-size: 16px;
+  --base-font-weight: 400;
+  --black: #444444;
+  --red: #C94F4F;
+  --yellow: #C2A14D;
+  --blue: #5C7A8D;
+  --green: #6F8F72;
+  --parchment: #F4EBE8;
+  --gray: #4c6b6b;
+}
