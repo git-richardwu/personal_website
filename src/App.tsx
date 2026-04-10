@@ -122,7 +122,7 @@ function App() {
     <MysteryContentProvider>
       <TransitionProvider>
       <CircleTransition />
-      <BrowserRouter>
+      <BrowserRouter basename="/personal-website/">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About data={data.about} />} />
