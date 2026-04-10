@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import About from './components/pages/About.tsx';
 import Experience from './components/pages/Experience.tsx';
 import LandingPage from './components/pages/LandingPage.tsx';
@@ -122,7 +122,7 @@ function App() {
     <MysteryContentProvider>
       <TransitionProvider>
       <CircleTransition />
-      <BrowserRouter basename="/personal-website/">
+      <HashRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About data={data.about} />} />
@@ -131,7 +131,7 @@ function App() {
           <Route path="/projects" element={<Projects data={data.projects}/>} />
           <Route path="/denouement" element={<Denouement />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       </TransitionProvider>
     </MysteryContentProvider>
   );
